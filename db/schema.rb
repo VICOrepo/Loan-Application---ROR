@@ -15,12 +15,12 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_08_093911) do
     t.string "name"
     t.string "email"
     t.decimal "amount"
-    t.text "purpose"
+    t.string "purpose"
     t.string "status"
     t.decimal "ssn"
     t.decimal "phone_number"
     t.text "profession"
-    t.text "address"
+    t.string "address"
     t.decimal "income"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

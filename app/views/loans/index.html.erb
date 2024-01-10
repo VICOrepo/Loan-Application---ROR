@@ -1,0 +1,43 @@
+<h1>Users Details Page</h1>
+<table style="border-collapse: collapse; width: 100%; border: 1px solid black;">
+  <thead>
+    <tr style="border-bottom: 2px solid black;">
+      <th style="border-right: 1px solid black; padding: 8px;">Name</th>
+      <th style="border-right: 1px solid black; padding: 8px;">Email</th>
+      <th style="border-right: 1px solid black; padding: 8px;">Amount</th>
+      <th style="border-right: 1px solid black; padding: 8px;">Purpose</th>
+      <th style="border-right: 1px solid black; padding: 8px;">SSN</th>
+      <th style="border-right: 1px solid black; padding: 8px;">Phone Number</th>
+      <th style="border-right: 1px solid black; padding: 8px;">Address</th>
+      <th style="border-right: 1px solid black; padding: 8px;">Income</th>
+      <th style="border-right: 1px solid black; padding: 8px;">Profession</th>
+      <th colspan="3" style="border-right: 1px solid black; padding: 8px;">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @loans.each do |loan| %>
+    <tr style="border-bottom: 1px solid black;">
+      <td style="border-right: 1px solid black; padding: 8px;"><%= loan.name%></td>
+      <td style="border-right: 1px solid black; padding: 8px;"><%= loan.email%></td>
+      <td style="border-right: 1px solid black; padding: 8px;"><%= loan.amount%></td>
+      <td style="border-right: 1px solid black; padding: 8px;"><%= loan.purpose%></td>
+      <td style="border-right: 1px solid black; padding: 8px;"><%= loan.ssn%></td>
+      <td style="border-right: 1px solid black; padding: 8px;"><%= loan.phone_number%></td>
+      <td style="border-right: 1px solid black; padding: 8px;"><%= loan.address%></td>
+      <td style="border-right: 1px solid black; padding: 8px;"><%= loan.income%></td>
+      <td style="border-right: 1px solid black; padding: 8px;"><%= loan.profession%></td>
+      <td style="border-right: 1px solid black; padding: 8px;"><%= link_to 'Show', loan_path(loan) %></td>
+      <td style="border-right: 1px solid black; padding: 8px;"><%= link_to 'Edit', edit_loan_path(loan) %></td>
+      <td style="padding: 8px;">
+        <%= button_to 'Delete', loan_path(loan), method: :delete, data: { confirm: 'Are you sure you want to delete this Loan?' } %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br/>
+
+
+<p><%= link_to 'Create New Application', new_loan_path %></p>

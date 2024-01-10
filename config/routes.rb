@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  resources :loans, only: [:new, :create]
-  root 'loans#new'
+  root 'pages#home'
+  get 'about', to: 'pages#about'
+  
+  resources :loans
+  
 end

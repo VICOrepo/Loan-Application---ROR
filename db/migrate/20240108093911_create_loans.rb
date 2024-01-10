@@ -4,12 +4,12 @@ class CreateLoans < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :email
       t.decimal :amount
-      t.text :purpose
+      t.string :purpose
       t.string :status
       t.numeric :ssn
       t.numeric :phone_number
       t.text :profession
-      t.text :address
+      t.string :address
       t.decimal :income
       t.timestamps
     end
