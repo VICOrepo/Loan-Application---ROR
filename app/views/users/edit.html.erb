@@ -1,5 +1,5 @@
 <div class="container mt-5">
-    <h2 class="text-center mt-4">Signup</h2>
+    <h2 class="text-center mt-4">Edit Your Profile</h2>
     <%= form_with(model: @user, class: "shadow-lg p-3 mb-3 bg-light text-black rounded-custom", local: true) do |f| %>
       <div class="form-group">
         <%= f.label :username %>
@@ -17,7 +17,7 @@
       </div>
   
       <div class="form-group text-center mt-3">
-        <%= f.submit 'Sign Up', class: 'btn btn-primary' %>
+        <%= f.submit 'Update Account', class: 'btn btn-primary' %>
       </div>
     <% end %>
     <div class="mb-3">
