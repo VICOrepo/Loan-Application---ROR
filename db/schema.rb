@@ -14,14 +14,24 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_08_093911) do
   create_table "loans", force: :cascade do |t|
     t.string "name"
     t.string "email"
+    t.string "middle_name"
+    t.string "last_name"
+    t.date "date_of_birth"
     t.decimal "amount"
     t.string "purpose"
-    t.string "status"
     t.decimal "ssn"
     t.decimal "phone_number"
-    t.text "profession"
+    t.string "profession"
     t.string "address"
-    t.decimal "income"
+    t.decimal "home_number"
+    t.string "street_address2"
+    t.string "city"
+    t.string "state"
+    t.decimal "zip"
+    t.string "residence_type"
+    t.decimal "annual_income"
+    t.string "employer_name"
+    t.decimal "employer_phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
