@@ -1,6 +1,6 @@
 <%= form_with model: @loan, class: "form" do |form| %>
 
-<body style="background-color: rgb(196, 238, 238)">
+<body style="background-color: rgb(165, 236, 192)">
   <div class="container">
     <br>
     <div class="row">
@@ -161,7 +161,7 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="form-group">
-            <%= form.label :income %> <%= form.number_field :income, class:
+            <%= form.label :annual_income, "Annual Income" %> <%= form.number_field :annual_income, class:
             "form-control", step: 0.01, placeholder: "Your Monthly Income" %>
           </div>
         </div>
