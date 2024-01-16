@@ -1,4 +1,34 @@
-<h1>Welcome to About Page</h1>
 
-<%= link_to 'Create New Application ', new_loan_path %>|
-<%= link_to 'Home Page', root_path %>
+<div class="container mt-5">
+    <div class="jumbotron text-center">
+      <h1 class="display-4">About Loan App</h1>
+      <p class="lead">Empowering Your Financial Journey</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Our Mission</h2>
+        <p>We are committed to providing accessible and affordable financial solutions to empower individuals in achieving their goals and dreams.</p>
+      </div>
+      <div class="col-md-6">
+        <h2>Why Choose Us?</h2>
+        <p>With a focus on transparency, integrity, and customer satisfaction, we strive to be your trusted partner in your financial journey.</p>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-12 text-center">
+        <p>Ready to take the next step?</p>
+        <%= link_to "Apply Now", signup_path, class: "btn btn-success btn-lg" %>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer mt-5 text-center">
+    <div class="container">
+      <p>&copy; 2024 Loan Application Portal</p>
+      <p>Created by Viral</p>
+    </div>
+  </footer>
+<!-- <%= link_to 'Create New Application ', new_loan_path %>|
+<%= link_to 'Home Page', root_path %> -->

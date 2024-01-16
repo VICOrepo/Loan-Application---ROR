@@ -1,5 +1,18 @@
-<h1>Welcome to the Homepage</h1>
 
-<%= link_to 'New Applcation ', new_loan_path %>|
-<%= link_to 'About Page ', about_path %>|
-<%= link_to 'All Users Details ', loans_path %>
+<body>
+  <div class="container mt-5">
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Welcome to the Loan Application Portal</h1>
+      <p class="lead">Get started on your journey to financial support!</p>
+      <%= link_to "Sign up!", signup_path, class: "btn btn-success btn-lg" %>
+    </div>
+  </div>
+  <footer class="footer mt-5 text-green" style="margin-top: 100px;">
+    <div class="row mt-6">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2024 Loan Application Portal</p>
+          <p>Created by Viral</p>
+        </div>
+      </div>
+  </footer>
+</body>
