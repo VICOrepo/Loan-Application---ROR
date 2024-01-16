@@ -1,4 +1,6 @@
 class Loan < ApplicationRecord
+    belongs_to :user
+
     validates :name, presence: true, length: { minimum: 4, maximum: 100 }
     validates :email, presence: true, length: { minimum: 4, maximum: 100 }, format: { with: URI::MailTo::EMAIL_REGEXP }
     validates :middle_name, length: { maximum: 100 } # Allow blank, but validate length if present
