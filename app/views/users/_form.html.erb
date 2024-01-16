@@ -1,6 +1,6 @@
 <div class="container mt-5">
     <h2>Signup</h2>
-    <%= form_with(model: @user, class: "shadow p-3 mb-3 bg-info rounded", local: true) do |f| %>
+    <%= form_with(model: @user, class: "shadow-lg p-3 mb-3 bg-light text-black rounded-custom", local: true) do |f| %>
       <div class="form-group">
         <%= f.label :username %>
         <%= f.text_field :username, class: 'form-control' %>
