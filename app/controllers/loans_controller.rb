@@ -17,7 +17,7 @@ class LoansController < ApplicationController
 
   def create
     @loan = Loan.new(loan_params)
-    @loan.user = User.first
+    @loan.user = User.last
     if @loan.save
       flash[:notice] = "Loan was created successfully."
       redirect_to @loan
