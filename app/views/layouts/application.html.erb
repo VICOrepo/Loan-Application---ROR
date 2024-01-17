@@ -43,5 +43,10 @@
     <% flash.each do |name, msg| %> <% if msg.is_a?(String) %>
     <div class="flash-<%= name %>"><%= msg %></div>
     <% end %> <% end %> <%= yield %>
+
+
+    <!-- Add these lines to include Flatpickr and Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
   </body>
 </html>
