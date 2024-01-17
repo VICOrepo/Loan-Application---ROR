@@ -21,6 +21,12 @@ class Loan < ApplicationRecord
     validates :employer_name, length: { maximum: 100 }, allow_blank: true
     validates :employer_phone, numericality: { only_integer: true }, allow_blank: true
   
-    enum purpose: [:Home, :Car, :Education, :Business, :Wedding]
+    enum purpose: {
+      'Medical Expenses': 'Medical Expenses',
+      'Gold': 'Gold',
+      'Education': 'Education',
+      'Home': 'Home',
+      'Vehicle': 'Vehicle'
+    }  
   end
   
