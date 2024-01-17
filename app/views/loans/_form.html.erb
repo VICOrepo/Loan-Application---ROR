@@ -21,7 +21,7 @@
           <br>
           <div class="form-group">
             <%= form.label :amount, "Loan Amount" %>
-            <%= form.text_field :amount, class: "form-control", placeholder: "$2,000.00", oninput: 'maskLoanAmount(this)' %>
+            <%= form.text_field :amount, class: "form-control", placeholder: "$2,000.00",maxlength: 10, oninput: 'maskLoanAmount(this)' %>
           </div>
         </div>
     </div>
@@ -113,7 +113,7 @@
         </div>
           <br>
           <div class="form-group">
-            <%= form.label :street_address2 %> <%= form.text_field :street_address2, class:
+            <%= form.label :street_address2, "Street Address 2(Optional)" %> <%= form.text_field :street_address2, class:
             "form-control", placeholder: "Your Address 2" %>
           </div>
       </div>
@@ -162,7 +162,7 @@
         <div class="col-lg-4">
           <div class="form-group">
             <%= form.label :annual_income, "Annual Income" %> <%= form.text_field :annual_income, class:
-            "form-control", step: 0.01, placeholder: "Your Monthly Income", oninput: 'maskIncome(this)' %>
+            "form-control", step: 0.01, placeholder: "Your Monthly Income",maxlength: 8, oninput: 'maskIncome(this)' %>
           </div>
         </div>
 
