@@ -15,6 +15,10 @@ gem "sqlite3", "~> 1.4"
 # bootstrap
 gem 'bootstrap', '~> 5.3.2'
 
+# pegination
+gem 'will_paginate'
+gem 'bootstrap_pagination'
+
 # datepicker
 gem 'bootstrap-datepicker-rails'
 
